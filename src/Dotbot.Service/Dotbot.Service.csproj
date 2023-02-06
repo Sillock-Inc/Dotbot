@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Dotbot.Infrastructure\Dotbot.Infrastructure.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Autofac" Version="6.5.0" />
+      <PackageReference Include="FluentResults" Version="3.15.1" />
+      <PackageReference Include="FluentResults.Extensions.FluentAssertions" Version="2.1.0" />
+      <PackageReference Include="MediatR.Contracts" Version="1.0.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="CommandHandlers" />
+      <Folder Include="Services" />
+    </ItemGroup>
+
+</Project>
